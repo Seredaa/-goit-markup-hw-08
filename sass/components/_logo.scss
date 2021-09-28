@@ -11,6 +11,10 @@
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 20px;
+  @include font(24px, 1.12, 0.03em, var(--logo-color));
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 1.19, 0.03em, var(--logo-color));
+  }
 }
 
 .logo__web {

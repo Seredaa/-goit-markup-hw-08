@@ -1,0 +1,6 @@
+@mixin font($fs: 14px, $lh: 1.71, $ls: 0.03em, $cl: var(--title-color)) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $cl;
+}

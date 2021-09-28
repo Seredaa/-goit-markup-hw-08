@@ -21,30 +21,62 @@
     <header class="header">
         <div class="header__container container">
             <a class="header__logo link" href="./index.html">Web<span class="logo__web">Studio</span></a>
-            <nav class="nav">
-                <ul class="nav-list list">
-                    <li class="nav-list__item"><a class="nav-list__link link " href="./index.html">Студия</a>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <div class="menu-container--mobile">
+                    <nav class="nav">
+                        <ul class="nav-list list">
+                            <li class="nav-list__item"><a class="nav-list__link link current" href="./index.html">Студия</a>
     
-                    </li>
-                    <li class="nav-list__item"><a class="nav-list__link link current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav-list__item"><a class="nav-list__link  link" href="">Контакты</a></li>
-                </ul>
-            </nav>
+                            </li>
+                            <li class="nav-list__item"><a class="nav-list__link link " href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="nav-list__item"><a class="nav-list__link  link" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
     
-            <ul class="nav-contacts">
-                <li class="nav-contacts__item"><a class="nav-contacts__link link " href="mailto:info@devstudio.com">
-                        <svg class="nav-contacts__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-mail"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="nav-contacts__item"><a class="nav-contacts__link link" href="tel:+380961111111">
-                        <svg class="nav-contacts__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-            </ul>
+                    <ul class="nav-contacts">
+                        <li class="nav-contacts__item"><a class="nav-contacts__link nav-contacts__mail link "
+                                href="mailto:info@devstudio.com">
+                                <svg class="nav-contacts__icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-mail"></use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="nav-contacts__item"><a class="nav-contacts__link nav-contacts__phone link"
+                                href="tel:+380961111111">
+                                <svg class="nav-contacts__icon" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="social-mobile">
+                        <li class="social-mobile__item">
+                            <a href="" class="link social-mobile__link">Instagram</a>
+                        </li>
+                        <li class="social-mobile__item">
+                            <a href="" class="link social-mobile__link">Twitter</a>
+                        </li>
+                        <li class="social-mobile__item">
+                            <a href="" class="link social-mobile__link">Facebook</a>
+                        </li>
+                        <li class="social-mobile__item">
+                            <a href="" class="link social-mobile__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="close-btn--menu btn js-close-menu" type="button">
+                    <svg class="close-btn--menu__icon">
+                        <use href="./images/new-icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+    
+            </div>
+            <button class="menu-btn btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-btn__icon">
+                    <use href="./images/new-icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
+    
     </header>
     <main>
 
@@ -315,6 +347,6 @@
             </div>
             
         </footer>
-    
+    <script src="./js/mobile-menu.js"></script>
     </body>
     </html>
