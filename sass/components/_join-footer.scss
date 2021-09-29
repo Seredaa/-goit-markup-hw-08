@@ -1,6 +1,10 @@
 .join {
-  margin-left: 70px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  display: inline-block;
 }
+
 .join__title {
   font-family: "Roboto";
   font-style: normal;
@@ -15,7 +19,9 @@
 .join__list {
   display: flex;
   margin-top: 20px;
+  justify-content: center;
 }
+
 .join__link {
   height: 44px;
   width: 44px;

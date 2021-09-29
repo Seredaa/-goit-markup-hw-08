@@ -24,25 +24,10 @@
 }
 
 .join {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
-  }
-}
-
-.subscribe {
-  @media screen and (max-width: 1199px) {
-    margin-top: 60px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 450px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    width: 570px;
   }
 }
