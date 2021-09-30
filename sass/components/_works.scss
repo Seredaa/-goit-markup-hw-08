@@ -1,5 +1,8 @@
 .work-section {
   padding-top: 0;
+  @media screen and (max-width: 1299px) {
+    display: none;
+  }
 }
 
 .works-title {

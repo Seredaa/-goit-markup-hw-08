@@ -357,13 +357,6 @@ ul {
   }
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .header__container {
   display: flex;
   align-items: center;
@@ -748,27 +741,70 @@ ul {
 }
 
 .hero {
-  background-color: #2f303a;
-  text-align: center;
-  padding: 200px 0;
-  /* max-width: 1600px; */
-  height: 600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-ground.png);
+  padding: 118px 0;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* margin-bottom: 94px; */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images8/hero-img-m.jpg);
 }
 
-.hero-title {
-  font-family: "Roboto";
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    height: 600px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images8/hero-img-m@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images8/hero-img-t.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images8/hero-img-t@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images8/hero-img@2x.jpg);
+  }
+}
+
+.hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
+  color: var(--main-color);
+  text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+  }
 }
 
 .hero-btn {
@@ -793,6 +829,12 @@ ul {
 
 .hero-container {
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-container {
+    max-width: 480px;
+  }
 }
 
 .backdrop {
@@ -984,12 +1026,69 @@ ul {
   fill: var(--logo-color);
 }
 
-.benefits {
-  display: flex;
+@media screen and (min-width: 767px) {
+  .benefits {
+    display: flex;
+  }
 }
 
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .benefits {
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-item {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.benefits-custom {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  background-color: var(--background-color);
+  border-radius: 4px;
+}
+
+.benefits__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.benefits__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-transform: uppercase;
 }
 
 .benefits-custom {
@@ -1026,6 +1125,12 @@ ul {
 
 .work-section {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1299px) {
+  .work-section {
+    display: none;
+  }
 }
 
 .works-title {
@@ -1667,6 +1772,12 @@ ul {
     color: var(--main-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-form {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
