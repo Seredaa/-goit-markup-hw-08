@@ -572,6 +572,27 @@ ul {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 767px) {
+  .nav-contacts__mail {
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-contacts__phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+  }
+}
+
 .social-mobile {
   display: flex;
   flex-wrap: wrap;
@@ -1452,6 +1473,10 @@ ul {
   .footer-btn {
     margin-left: 40px;
   }
+}
+
+.footer-form {
+  display: block;
 }
 
 .footer-form {
