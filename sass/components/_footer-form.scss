@@ -35,6 +35,10 @@
 }
 
 .footer-form {
+  display: block;
+}
+
+.footer-form {
   @media screen and (min-width: 1200px) {
     display: flex;
   }
