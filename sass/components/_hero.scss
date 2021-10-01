@@ -1,29 +1,77 @@
 .hero {
-  background-color: #2f303a;
-  text-align: center;
-  padding: 200px 0;
-  /* max-width: 1600px; */
-  height: 600px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/Img-ground.png);
+  padding: 118px 0;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 400px;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+    height: 600px;
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* margin-bottom: 94px; */
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images8/hero-img-m.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images8/hero-img-m@2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images8/hero-img-t.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images8/hero-img-t@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-img.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images8/hero-img@2x.jpg);
+    }
+  }
 }
 
-.hero-title {
-  font-family: "Roboto";
+.hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(26px, 1.62, 0.06em, var(--main-color));
+  @media screen and (min-width: 1200px) {
+    @include font(44px, 1.36, 0.06em, var(--main-color));
+  }
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 .hero-btn {
@@ -48,4 +96,7 @@
 
 .hero-container {
   padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
 }
