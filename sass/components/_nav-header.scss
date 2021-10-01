@@ -98,7 +98,9 @@
 }
 
 .nav-contacts__item:not(:last-child) {
-  // margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
   padding: 0;
 }
 
