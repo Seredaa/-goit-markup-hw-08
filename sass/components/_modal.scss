@@ -2,28 +2,47 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
-  transform: translate(-50%, -50%);
-  padding: 40px;
-  border-radius: 3px;
-  background: #fff;
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 450px;
+  min-height: 609px;
+  @media screen and (min-width: 768px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+  border-radius: 4px;
+  padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--main-color);
+  .backdrop.is-hidden & {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 }
 .modal-close {
   position: absolute;
   top: 8px;
   right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   width: 30px;
   height: 30px;
-  cursor: pointer;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000000;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--logo-color);
+  }
 }
 
 .modal-close:hover {
@@ -32,7 +51,11 @@
 
 .modal-title {
   font-size: 20px;
-  line-height: 23px;
-
-  color: var(--secondary-text-color);
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  @include font(20px, 1.15, 0.03em, var(--title-color));
+  @media screen and (min-width: 768px) {
+    @include font(20px, 1.5, 0.03em, var(--title-color));
+  }
 }

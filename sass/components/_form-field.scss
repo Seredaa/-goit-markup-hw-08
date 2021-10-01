@@ -61,6 +61,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  @media screen and (max-width: 767px) {
+    @include font(12px, 1.17, 0.03em, var(--second-color));
+  }
 }
 .form-checkbox {
   position: absolute;
@@ -129,6 +132,10 @@
   &:focus {
     color: #188ce8;
     text-decoration: none;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: 4px;
+    @include font(12px, 1.17, 0.03em, var(--logo-color));
   }
 }
 // .policy-link:hover,
