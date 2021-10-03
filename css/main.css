@@ -507,7 +507,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .nav-contacts {
     display: flex;
-    margin-left: 83px;
+    margin-left: auto;
   }
 }
 
