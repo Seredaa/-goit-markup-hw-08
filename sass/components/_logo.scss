@@ -15,6 +15,10 @@
   @media screen and (min-width: 1200px) {
     @include font(26px, 1.19, 0.03em, var(--logo-color));
   }
+  @media screen and (max-width: 767px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .logo__web {

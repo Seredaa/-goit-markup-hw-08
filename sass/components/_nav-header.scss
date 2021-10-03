@@ -85,6 +85,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--logo-color);
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -125,13 +128,13 @@
   @media screen and (max-width: 767px) {
     margin-top: 32px;
     font-weight: 500;
-    @include font(24px, 1.17, 0.02em);
+    @include font(24px, 1.17, 0.02em, var(--second-color));
   }
 }
 .nav-contacts__phone {
   @media screen and (max-width: 767px) {
     font-weight: 500;
-    @include font(34px, 1.18, 0.02em, var(--accent));
+    @include font(34px, 1.18, 0.02em, var(--logo-color));
   }
 }
 
@@ -173,6 +176,9 @@
   position: absolute;
   top: 10px;
   right: 15px;
+  border: transparent;
+  width: 40px;
+  height: 40px;
   color: var(--title-color);
   background-color: var(--main-color);
   &:hover,
@@ -187,6 +193,9 @@
 }
 .menu-btn {
   color: #000000;
+  width: 40px;
+  height: 40px;
+  border: transparent;
   background-color: var(--main-color);
   &:hover,
   &:focus {

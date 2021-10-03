@@ -8,7 +8,7 @@
   line-height: 1.71x;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   display: inline-block;
   font-style: normal;
 }
@@ -23,4 +23,8 @@
   display: inline-block;
   font-style: normal;
   color: var(--second-color);
+  &:not(last-child) {
+    margin-bottom: 10px;
+  }
+  padding-bottom: 0;
 }

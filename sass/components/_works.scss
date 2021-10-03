@@ -19,6 +19,7 @@
   @media screen and (min-width: 1200px) {
     @include font(36px, 1.17, 0.03em, var(--title-color));
   }
+  margin-top: 60px;
 }
 .img {
   max-width: 100%;
@@ -35,6 +36,13 @@
   &::not(:last-child) {
     margin-right: 30px;
   }
+  &::not(last-child) {
+    margin-right: 30px;
+  }
+}
+
+.works-item:not(last-child) {
+  margin-right: 30px;
 }
 
 .label {
