@@ -1311,7 +1311,11 @@ ul {
   margin-right: 8px;
 }
 
-.filter__item::nth-child(n + 3) {
+.filter__item::nth-child(n + 4) {
+  margin-top: 15px;
+}
+
+.filter__item:nth-child(n + 4) {
   margin-top: 15px;
 }
 
