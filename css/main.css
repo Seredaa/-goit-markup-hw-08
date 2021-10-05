@@ -1353,12 +1353,6 @@ ul {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 767px) {
-  .team-section {
-    display: none;
-  }
-}
-
 .command {
   margin-top: 30px;
 }
