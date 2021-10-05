@@ -5,13 +5,14 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-top: 94px;
-  padding-top: 94px;
 }
 
 .team-section {
   background-color: var(--background-color);
   padding-bottom: 94px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .command {
